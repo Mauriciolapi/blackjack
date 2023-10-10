@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mauricio Lapido">
+    <link rel="stylesheet" href="style.css">
+    <title>Blackjack</title>
+</head>
+<body>
+    <div class="mesa">
+        <div class="top"></div>
+        <div class="mid"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="container">
+        <div id="juego">
+            <div class="btns">
+                <input type="button" value="Stand" id="stand">
+                <input type="button" value="Hit" id="hit">
+                <input type="button" value="Deal" id="deal">
+                <div>
+                    <input type="number" id="plata" placeholder="Apuesta">
+                    <input type="text" id="plataActual" disabled>
+                </div>
+                
+            </div>
+            <div class="manos">
+                <div id="manoUsuario"></div>
+                <div id="manoCrupier"></div>
+            </div>
+            
+        </div>
+
+        <div class="mensajeDiv" id="mensajeDiv">
+            <div id="mensaje"></div>
+            <div>
+                <div>
+                    <div id="valorUsuario"></div>
+                    <div id="valorCrupier"></div>
+                </div>
+            </div>
+        </div>
+        <div id="startDiv">
+            <input type="button" value="Start" id="start">
+        </div>
+    </div>
+
+    
+
+
+    <script defer src="script.js"></script>
+</body>
+</html>
