@@ -105,14 +105,16 @@ function terminar(gano, plata) {
         mensaje.textContent = 'Perdiste :(';
         manoUsuarioInp.style.display = 'none';
         manoCrupierInp.style.display = 'none';
-        setTimeout(() => {
-            mensajeDiv.style.display = 'none';
-        }, 2000);
-        if(money == 0){
+        if(money === 0){
             juego.style.display = 'none';
             setTimeout(() => {
                 window.location.href = ""; 
         }, 2000);
+        }else{
+            setTimeout(() => {
+                mensajeDiv.style.display = 'none';
+                juego.style.display = '';
+            }, 2000);
         }
     } else {
         mensajeDiv.style.display = '';
